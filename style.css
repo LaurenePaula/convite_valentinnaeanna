@@ -137,9 +137,43 @@ header > img {
   font-size: 5rem;
   font-weight: bold;
 }
+
+/* Estilo para a seção de sugestão de presente */
+.container-sugestao {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  margin-top: 1rem;
+}
+
+.sugestao-presente {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 350px; /* Mesma largura dos botões link-presenca */
+  background: #ffffffae; /* Mesmo fundo semi-transparente do container-text */
+  padding: 1em;
+  border: 2px dashed #da6ea0; /* Borda tracejada combinando com os botões */
+  border-radius: 16px;
+  text-align: center;
+  color: #922f47; /* Cor do texto do container principal */
+  font-family: Georgia, serif;
+}
+
+.sugestao-presente p {
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
 @media (max-width: 800px) {
   .space-item {
     display: none;
+  }
+
+  .sugestao-presente {
+    width: 50%; /* Ocupa quase toda a largura no celular */
+    font-size: 0.9rem;
   }
 
   .data-hora {
@@ -168,4 +202,4 @@ header > img {
     background-size: 100%;
     background-position: center bottom;
   }
-
+}
